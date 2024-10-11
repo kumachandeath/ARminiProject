@@ -4,12 +4,7 @@ using UnityEngine;
 public class ARInteractionManager : MonoBehaviour
 {
     public ObjectPoolManager objectPoolManager; // 오브젝트 풀 매니저
-    private Camera arCamera; // AR 카메라
-
-    private void Start()
-    {
-        arCamera = Camera.main; // AR 카메라 설정
-    }
+    [SerializeField] Camera arCamera; // AR 카메라
 
     private void Update()
     {
